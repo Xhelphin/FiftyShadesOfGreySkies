@@ -48,8 +48,11 @@
       }
     </style>
     <script>
-      function reload() {
-        window.location.href = "/FiftyShadesOfGreySkies";
+      function randint(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+      }
+      function changeImage() {
+        document.getElementById("skyimg").src = randint(1,50).toString() + '.jpg';
       }
     </script>
   </head>
@@ -59,14 +62,11 @@
       <h2 class="text">The quintessentially British website</h2>
     </div>
     <div class="container imgcontainer">
-      <?php
-        $imgfile = rand(1,50) . ".jpg";
-        echo '<img id="skyimg" src="' . $imgfile . '" alt="Photo of a grey sky">';
-      ?>
+      <img id="skyimg" src="" alt="Photo of a grey sky">'
     </div>
     <br>
     <div class="container">
-      <button class="button blackbutton" onclick="reload()">Show me another sky</button>
+      <button class="button blackbutton" onclick="changeImage()">Show me another sky</button>
     </div>
     <br>
     <div class="container">
