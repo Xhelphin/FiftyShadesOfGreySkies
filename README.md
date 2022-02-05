@@ -5,7 +5,7 @@ See it in action: [https://jack.jdgweb.ml/FiftyShadesOfGreySkies](https://jack.j
 Is the British weather not enough for you, or are you not in the UK? Well, experience it here.  
 Have a look at one of 50 random grey skies. Enjoy.
 ## How does it work?
-Look at the code. Its all in `index.php`.
+Look at the code. Its all in `index.html`.
 ## Who made it?
 Me.
 ## Will you add more skies?
